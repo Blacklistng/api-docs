@@ -22,8 +22,8 @@
     $company_complete_fee = 20; // this is for the full data company fee
 
     $crc_company_fee = 60; //  this is the company crc fee
-    $fc_company_b_fee = 60; //  this is the company first central basic fee
-    $fc_company_p_fee = 60;
+    $fc_company_b_fee = 70; //  this is the company first central basic fee
+    $fc_company_p_fee = 50;
 
     ?>
 
@@ -340,7 +340,7 @@
             </li>
             <li>
                 <a href="#blacklist_check" class="toc-h1 toc-link" data-title="Blacklist_Check">Restructure Search</a>
-                <ul class="toc-list-h2">
+                <!-- <ul class="toc-list-h2">
                     <li>
                         <a href="#add_blacklist" class="toc-h2 toc-link" data-title="Add a Record">Add
                             Record</a>
@@ -353,7 +353,7 @@
                         <a href="#delete-blacklist" class="toc-h2 toc-link" data-title="Delete Restructure">Delete
                             Record</a>
                     </li>
-                </ul>
+                </ul> -->
             </li>
             <li>
                 <a href="#crc_check" class="toc-h1 toc-link" data-title="CRC_Check">CRC Search</a>
@@ -574,7 +574,7 @@ curl <span class="s2">"https://restructure.com.ng/api/"</span>
 
             <!-- ADD A BLACKLIST RECORD  -->
 
-            <h2 id='add_blacklist'>Add a Record </h2>
+            <!-- <h2 id='add_blacklist'>Add a Record </h2>
             <pre class="highlight cURL tab-cURL"><p>Sample Request:</p><code>curl --request POST \<br>--url <span class="s2">https://restructure.com.ng/api/add</span>
             -H <span class="s2">"Authorization: YOUR-API-KEY"</span>
             -data <span class="s2">'{"name":"John Doe","bvn":1562772282,"phone":"08162727822","email":"user@email.com","gender":"male","loan_amount":14000,"amount_paid":2000,"due_date":"20/1/2020","location":"Lagos"}'</span>
@@ -660,11 +660,11 @@ curl <span class="s2">"https://restructure.com.ng/api/"</span>
                     </tr>
 
                 </tbody>
-            </table>
+            </table> -->
 
             <!-- update a blacklist record  -->
 
-            <h2 id='update_blacklist'>Update a Record</h2>
+            <!-- <h2 id='update_blacklist'>Update a Record</h2>
             <pre class="highlight cURL tab-cURL"><p>Sample Request:</p><code>curl --request POST \<br>--url <span class="s2">https://restructure.com.ng/api/bvn-update/{bvn}</span>
             -H <span class="s2">"Authorization: YOUR-API-KEY"</span>
             -data <span class="s2">'{"name":"John Doe","bvn":1562772282,"phone":"08162727822","email":"user@email.com","gender":"male","loan_amount":14000,"amount_paid":2000,"due_date":"20/1/2020","location":"Lagos"}'</span>
@@ -750,10 +750,10 @@ curl <span class="s2">"https://restructure.com.ng/api/"</span>
                     </tr>
 
                 </tbody>
-            </table>
+            </table> -->
 
             <!-- DELETE A BLACKLIST RECORD  -->
-            <h2 id='delete-blacklist'>Delete Record</h2>
+            <!-- <h2 id='delete-blacklist'>Delete Record</h2>
 
             <pre class="highlight cURL tab-cURL"><p>Sample Request:</p><code>curl --request POST \<br>--url <span class="s2">https://restructure.com.ng/api/delete</span>
   -H <span class="s2">"Authorization: YOUR-API-KEY"</span>
@@ -795,7 +795,7 @@ curl <span class="s2">"https://restructure.com.ng/api/"</span>
                         <td>customer's BVN</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
 
             <!-- CRC SEARCHES  -->
 
